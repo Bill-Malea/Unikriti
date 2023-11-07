@@ -13,7 +13,7 @@ const ViewCamera = ({ children }) => {
       delta
     );
 
-    easing.damp3(state.camera.position, [-0.8, 0, 1]);
+    easing.damp3(state.camera.position, [-0.9, 0, 1]);
   });
 
   return <group ref={group}>{children}</group>;

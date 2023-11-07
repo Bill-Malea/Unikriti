@@ -6,7 +6,7 @@ const Shirt = ({ color }) => {
   const { nodes, materials } = useGLTF("/shirt3d.glb");
 
   useFrame((state, delta) =>
-    easing.dampC(materials.lambert1.color, "#000000", 0.25, delta)
+    easing.dampC(materials.lambert1.color, color, 0.25, delta)
   );
 
   return (
@@ -15,7 +15,7 @@ const Shirt = ({ color }) => {
         castShadow
         geometry={nodes.T_Shirt_male.geometry}
         material={materials.lambert1}
-        material-roughnes={1}
+        material-roughnes={4}
         dispose={null}
       >
         <meshStandardMaterial attach="material" color={color} />

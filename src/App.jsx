@@ -31,27 +31,29 @@ const App = () => {
   };
 
   return (
-    <main>
-      <div
-        style={{
-          width: "100%",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-        }}
-      >
+    <main
+      style={{
+        width: "100%",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+      }}
+    >
+      <div>
         <ShirtModel shirtColor={shirtColor} backdropcolor={backdropColor} />
 
-        <span style={{ color: "black" }}>Select Color</span>
+        <div style={{ color: "black", fontWeight: "bold", padding: "5px" }}>
+          Select Color
+        </div>
 
-        <div style={{ display: "flex" }}>
+        <div style={{ display: "flex", padding: "5px" }}>
           {availableColors.map((item, index) => (
             <div
               key={index}
               style={{
                 backgroundColor: item.color,
-                width: 30,
-                height: 30,
+                width: 20,
+                height: 20,
                 margin: 5,
                 cursor: "pointer",
                 borderRadius: "50%",

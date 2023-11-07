@@ -1,7 +1,8 @@
 {
   "colors": [
-    { "color": "#FF0000", "backdrop": "#FFFFFF" },
-    { "color": "#00FF00", "backdrop": "#FFFF00" },
-    { "color": "#0000FF", "backdrop": "#00FFFF" }
+    { "color": "#4e056f", "backdrop": "#b69ebf" },
+    { "color": "#10ef99", "backdrop": "#7ef6c8" },
+    { "color": "#ec3136", "backdrop": "#2b2f42" },
+    { "color": "#00fff6", "backdrop": "#e5fffe" }
   ]
 }

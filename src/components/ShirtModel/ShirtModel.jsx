@@ -18,11 +18,20 @@ const ShirtModel = ({ shirtColor, backdropcolor }) => {
     return null;
   };
   return (
-    <div style={{ position: "relative", width: "350", height: "300px" }}>
-      <Canvas camera={{ fov: 30 }} gl={{ preserveDrawingBuffer: true }}>
+    <div style={{ position: "relative", width: "350", height: "500px" }}>
+      <Canvas
+        camera={{ fov: 35 }}
+        gl={{ preserveDrawingBuffer: true }}
+        className={backdropcolor}
+      >
         <ModelBackdrop backdropcolor={backdropcolor} />
-        <OrbitControls autoRotate enableZoom={false} />
-        <ambientLight intensity={0.5} />
+        <OrbitControls
+          minAzimuthAngle={-Math.PI / 10}
+          maxAzimuthAngle={-Math.PI / 10}
+          minPolarAngle={Math.PI / 10}
+          maxPolarAngle={Math.PI - Math.PI / 10}
+        />
+        <ambientLight intensity={0.7} />
         <Environment preset="sunset" />
         <ViewCamera>
           <Center>
