@@ -1,0 +1,7 @@
+{
+  "colors": [
+    { "color": "#FF0000", "backdrop": "#FFFFFF" },
+    { "color": "#00FF00", "backdrop": "#FFFF00" },
+    { "color": "#0000FF", "backdrop": "#00FFFF" }
+  ]
+}
