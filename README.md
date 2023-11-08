@@ -9,6 +9,10 @@ Clone this repository.
 ```bash
 
   git clone https://github.com/Bill-Malea/Unikriti
+  
+  cd project 
+  
+  npm install -g json-server
 
   npm i
 
