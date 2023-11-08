@@ -8,11 +8,23 @@ Clone this repository.
 
 ```bash
 
-  git clone https://github.com/your-username/your-repository.git
-
-  cd project
+  git clone https://github.com/Bill-Malea/Unikriti
 
   npm i
+
+```
+## Permissions
+
+To run  you may  need to give the powershell permssions to run the local server to retrieve colors.
+
+Run the Command Prompt as  an Administrator then run these commands to give necessary permissions
+
+```bash
+
+json-server --watch colors.json --port 3001
+
+Set-ExecutionPolicy RemoteSigned
+
 ```
 
 ## Deployment
